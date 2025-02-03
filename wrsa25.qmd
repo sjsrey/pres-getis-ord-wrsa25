@@ -1,0 +1,62 @@
+---
+title: "Mind the gap and the map: Measuing distributional and spatial
+polarization"
+author: "Sergio J. Rey"
+format: 
+  revealjs:
+    theme: solarized
+    css: custom.css
+---
+
+## Getis-Ord
+
+/* homage */
+
+---
+
+## Overview
+
+- Polarization
+- Framework
+- Empirical Illustration
+- Conclusion
+
+
+---
+
+# Polarization
+
+## Polarization
+
+what it is
+
+## Importance
+
+## Wolfson
+
+
+## Esteban-Ray
+
+## Geographical Polarization
+
+## Integration
+
+# Framework
+
+## Graphs
+
+## Intersection
+
+## Components
+
+# Empirical Illustration
+
+## Mexico
+
+## Trends
+
+## More
+
+# Conclusion
+
+## Thanks

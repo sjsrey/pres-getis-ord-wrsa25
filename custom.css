@@ -1,0 +1,20 @@
+.reveal .title {
+  color: #ff5733; /* Change title color */
+  font-size: 0.75em; /* Increase title font size */
+  font-family: 'Arial', sans-serif; /* Change font */
+}
+
+.reveal .subtitle {
+  color: #3498db; /* Subtitle color */
+  font-style: italic;
+}
+
+.reveal .author {
+  color: #2ecc71; /* Author text color */
+  font-weight: bold;
+}
+
+.reveal .date {
+  color: #555;
+  font-size: 1.2em;
+}
