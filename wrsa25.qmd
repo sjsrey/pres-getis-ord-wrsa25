@@ -1,11 +1,18 @@
 ---
-title: "Mind the gap and the map: Measuing distributional and spatial
-polarization"
-author: "Sergio J. Rey"
-format: 
-  revealjs:
-    theme: solarized
-    css: custom.css
+title: "Mind the gap and the map: Measuing distributional and spatial polarization"
+format:  clean-revealjs
+html-math-method:
+  method: mathjax
+  url: "https://ccdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: Sergio J. Rey
+    orcid: 0000-0001-5857-9762
+    email: sey@sdsu.edu
+    affiliations: 
+      - Center for Open Geographical Science
+      - Department of Geography
+      - San Diego State University
+date: last-modified
 ---
 
 ## Getis-Ord
@@ -14,6 +21,9 @@ format:
 <!-- homage  -->
 <!------------->
 
+::: {.notes}
+Pay homage to them here
+:::
 ---
 
 ## Overview
