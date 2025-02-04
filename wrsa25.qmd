@@ -1,6 +1,8 @@
 ---
 title: "Mind the gap and the map: Measuing distributional and spatial polarization"
-format:  clean-revealjs
+format:  
+  clean-revealjs:
+    slide-number: false
 html-math-method:
   method: mathjax
   url: "https://ccdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
