@@ -15,7 +15,7 @@ author:
       - Department of Geography
       - San Diego State University
 date: last-modified
----
+--- 
 
 ## Getis-Ord
 
@@ -35,19 +35,39 @@ Pay homage to them here
 - Empirical Illustration
 - Conclusion
 
+::: {.notes}
+provide overview here
+:::
 
 ---
 
 # Polarization
+::: {.notes}
+Motivate the focus on polarization
+:::
+something
+
+```{python}
+
+````
+something
+
 
 ## Polarization
-
 what it is
-
+End of file during parsingSymbol’s value as variable is void: {{python}}End of file during parsing
+:::{.notes}
+explain polarizatin
+:::
+End of file during parsingSymbol’s value as variable is void: {python}End of file during parsing
 ## Importance
-
+:::{.notes}
+Why is it important
+:::
 ## Wolfson
+End of file during parsingSymbol’s value as variable is void: {.bash}End of file during parsing
 
+End of file during parsingSymbol’s value as variable is void: {python}End of file during parsing
 
 ## Esteban-Ray
 
@@ -58,6 +78,7 @@ what it is
 # Framework
 
 ## Graphs
+
 
 ## Intersection
 
