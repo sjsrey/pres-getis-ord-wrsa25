@@ -5,7 +5,6 @@ format:
     slide-number: false
 html-math-method:
   method: mathjax
-  url: "https://ccdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 author:
   - name: Sergio J. Rey
     orcid: 0000-0001-5857-9762
@@ -42,6 +41,9 @@ provide overview here
 ---
 
 # Polarization
+
+## Bipolarization
+
 ::: {.notes}
 Motivate the focus on polarization
 :::
@@ -54,31 +56,91 @@ something
 
 
 ## Polarization
-what it is
-End of file during parsingSymbol’s value as variable is void: {{python}}End of file during parsing
+
 :::{.notes}
 explain polarizatin
 :::
-End of file during parsingSymbol’s value as variable is void: {python}End of file during parsing
+
 ## Importance
 :::{.notes}
 Why is it important
 :::
+
 ## Wolfson
-End of file during parsingSymbol’s value as variable is void: {.bash}End of file during parsing
 
-End of file during parsingSymbol’s value as variable is void: {python}End of file during parsing
+\begin{equation}
+P_W = (2G_B - G) \frac{\mu}{m}.
+\end{equation}
+where $G_B$ is the Gini index of inequality between the two halves, $G$ is the Gini index for the entire distribution, $\mu$ is the mean of the distribution, and $m$ is the median.
+Letting $L(p)$ be the ordinate of the Lorenz curve at the $p_{th}$ percentile, the discrepancy between perfect equality and the Lorenz curve at the median is: $D_{50} = 0.5 - L(0.5)$.
+Given that $G_B = D_{50}$, the Gini index can be rewritten as
+ $G=G_B + G_W$
+ with  $G_W$ representing inequality within the two halves of the distribution. This implies the polarization index is:
+\begin{equation}
+P_W = (G_B-G_W)\frac{\mu}{m}.
+\end{equation} 
 
-## Esteban-Ray
+## Components of Bipolarization
 
-## Geographical Polarization
+- *Increasing spread*: gap between the two halves
+- *Increasing identification*: decrease in local variance
+
+:::{.notes}
+add two sets of figures to demonstrate these components
+
+point out that identification in the case of a transfer from Musk to Trump would work to reduce inequality (variance) but increase polarization
+:::
+
+## Multipolarization 
+
+:::{.notes}
+add in references and bib
+:::
+
+- Division into $k$ ordered groups
+- $\pi_i= N_i /\sum_i N_i$
+- $\mu_i$ is the relative mean income of group $i$
+
+$$
+P_{ER} (\alpha) = \sum_{i=1}^n \sum_{j=1}^n \pi_{i}^{\alpha+1} \pi_j \left| \mu_i - \mu_j \right|
+$$
+
+The parameter $\alpha$ is the degree of sensitivity to polarization. When $\alpha=0$, $P_{ER}(\alpha) = 2 G_{B}$, where $G_B$ is the Gini index between groups.
+
+##  Spatial Polarization
+$$
+I(y) = \sum_{g}^K w_g I_g + I(\mu_1 e_1, \mu_2 e_2, \ldots, \mu_k e_k)
+$$
+
+where
+
+w_g =
+\begin{cases}
+    f_g \left( \frac{\mu_g}{\mu} \right)^c & \text{if } c \neq 0, 1 \\
+    f_g \left( \frac{\mu_g}{\mu} \right)   & \text{if } c = 1 \\
+    f_g                                   & \text{if } c = 0.
+\end{cases}
+
+$I_g$ is the inequality in group $g$, $\mu_g$ is the mean of incomes for members of group $g$ and $e_g$ is a unity vector with $n_g$ elements, and $f_g=\frac{n_g}{n}$. The parameter $c$ measures transfer sensitivity. For $c < 2$, the measure is more sensitive to transfers in the bottom of the distribution than to those in the top end of the distribution. When $c=1$ or $c=0$ the [cite/text/c:@theil1972StatisticalDecomposition] measure is obtained.
+
+:::{.notes}
+Fix citation
+:::
+
+## Spatial Polarization
+
+The measure of spatial polarization is  the ratio of the between-group inequality over the within-group inequality:
+$$
+P_{ZK} = \frac{ I(\mu_1 e_1, \mu_2 e_2, \ldots, \mu_k e_k)}{\sum_{g}^K w_g I_g }.
+$$
+
+The polarization can thus grow with increasing distances between the average incomes of the regions as well as a decrease in the inequality within the regions.
 
 ## Integration
 
 # Framework
 
 ## Graphs
-
 
 ## Intersection
 
@@ -88,7 +150,28 @@ End of file during parsingSymbol’s value as variable is void: {python}End of f
 
 ## Mexico
 
+
+![States](figures/states.png)
+
+
+
+
 ## Trends
+
+
+![Distributions](figures/hist_facet.png)
+
+## Spatial Dynamics
+
+![Relative Quartiles](figures/choropleth_grid.png)
+
+##
+
+![Queen Adjacency Graph](figures/queen.png)
+
+
+##
+![Bipolar Adjacency Graph](figures/bigraph.png)
 
 ## More
 
