@@ -171,9 +171,102 @@ The polarization can thus grow with increasing distances between the average inc
 
 
 ##
-![Bipolar Adjacency Graph](figures/bigraph.png)
+![Bipolar Adjacency Graph 1940](figures/bigraph.png)
 
-## More
+
+##
+![Spatial Bipolarization Graph](figures/i2graph.png)
+
+
+## Spatial Bipolarization
+
+\begin{equation}
+S^B(A, G) = 1 - \frac{k_I-k}{n-2} = 1-\frac{6-2}{32-2} = 0.87.
+\label{e:S2}
+\end{equation}
+
+ with $k_I = |C_I|$ , $I = A \cap G$, and $k = max(k_A, k_G)$.
+
+## Dynamics of Inequality and Spatial Polarization
+
+![](figures/ts.png)
+
+## Scales of Spatial Polarization
+
+\begin{equation}
+1 - \frac{k_{i,low} - 1}{n_{low}-1} = 1- \frac{1_{} - 1}{16-1} = 1
+\end{equation}
+and for the high end of the distribution we have:
+\begin{equation}
+1- \frac{k_{i,high} - 1}{n_{high}-1} = 1 - \frac{5 - 1}{16-1} = 0.73
+\end{equation}
+Note that the overall spatial polarization index is the average of these two components.
+
+##
+
+![Local neighborhood homogeneity index Mexico state income  1940.](figures/localg.png)
+
+##
+
+![Local class connectivity  index Mexico state income  1940.](figures/locala.png)
+
+:::{.notes}
+The local neighborhood homogeneity index from equation (\ref{e:localg}) measures the proportion of a state's geographical neighbors that are on the same side of the income distribution.
+The distributional corollary to this index is the measure of local class connectivity from equation (\ref{e:locala}) shown in Figure [[fig:locala]], which measures the proportion of a state's attribute neighbors that are also its geographical neighbors.[fn:4]
+
+The two sets of local measures are complements.
+The former measure tells us the extent of local spatial polarization experienced by state $i$, while the latter measure informs on the relative contribution of state $i$ to overall attribute polarization.
+We can see the complementarity by contrasting the states of Baja California Sur and Oaxaca. Both of these states have high values for their local neighborhood indices, however, Baja California Sur has a low value for the local class connectivity measure while Oaxaca has a higher value for this index reflecting the spatial fragmentation (concentration) of the high (low) income components of the attribute distribution and the respective roles of the two states in these components.
+
+
+
+Taken together, the three scales of spatial polarization measured by the indices address three distinct questions. From the global perspective, is the attribute polarization concentrated in space? From the meso perspective, which parts of the attribute distribution drive the spatial polarization - or is there a distinction between the spatial articulation of the high and low ends of the distribution? And, from the local perspective we can ask which individual states contribute to,  and/or experience,  the spatial polarization?
+
+:::
+
+## 
+
+![Spatial multipolarization graph 1940 (quartiles: Q1 dark blue, Q2 blue, Q3 red, Q4 dark red).](figures/multigraph.png)
+
+:::{.notes}
+Figure [[fig:multigraph]] portrays the graph induced by the intersection of the quartile attribute and queen contiguity graphs.
+This multipolarization graph has 15 connected components, resulting in a polarization index of 0.61.
+The more granular slicing of the attribute distribution into quartiles further emphasizes the asymmetry in the spatial income distribution as the largest two components arise from states falling in the bottom two classes of the income distribution - all the states with incomes below the first quartile comprise the biggest component with eight states (dark blue). The next largest component comprises seven states belonging to the second income class. 
+The isolate Campeche belongs to the second class. In other words, subdividing the bottom half of the income distribution into two attribute components yields only three spatial components in the multipolarization intersection graph.
+By contrast, the two income classes above the median are highly fragmented into five and seven components.
+
+:::
+
+## Regimes
+
+![Hanson (1998)](figures/hanson.png)
+
+##
+
+![Spatial bipolarization intersection graph using the regionalization scheme from [cite/text/c:@hanson1996USMexicoIntegration].](figures/hansongraph.png)
+
+
+:::{.notes}
+This difference suggests two different perspectives on what the polarization index  captures when applied to the block graph case.
+On the one hand, it is measuring the extent to which "neighboring" pairs of observations belong to the same side of the income distribution.
+This is in the spirit of the Wolfson polarization index.
+On the other hand, the definition of neighbor relies on regional membership rather than spatial contiguity.
+In other words, all pairs of observations assigned to the same region contribute equally to the index,
+ whether or not the pair of locations is spatially contiguous.
+When groups of spatially connected observations from the same region are on different sides of the median,
+what was one face in the map of the regional partition
+will become multiple faces in the map of the intersection component.
+Because of the difference between the number of components in the intersection graph and the number of faces in the map of these components,
+we might view the polarization index from the intersection graph as a measure of regional polarization rather than spatial polarization.
+To have an index of spatial polarization for the block neighbors  case, we could add a subsequent intersection of the block-attribute graph with the spatial contiguity graph.
+The induced graph incudes 14 components which now are identical to the faces in the map of Figure [[fig:hansoncomponents]]. Using the number of spatial components in the polarization index drops the value to 0.69.[fn:2]
+:::
+
+## Polarization as Regional Inequality Decomposition
+
+![](figures/spatial_polarization.png)
+
+
 
 # Conclusion
 
