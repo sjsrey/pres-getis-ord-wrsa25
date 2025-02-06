@@ -40,25 +40,43 @@ provide overview here
 
 # Polarization
 
+## Context
+
+![Regional Science Literature](figures/convergence_wordcloud.png)
+
 ## Bipolarization
+
+![](figures/pysal-bipolarization.png)
 
 ::: {.notes}
 Motivate the focus on polarization
 :::
 
+## Revenge Narrative
+
+![@rodriguez-pose2018RevengePlaces](figures/revenge.png)
 
 
+## Partisan Sorting
+<div style="display: flex; width: 100%;">
+  <div style="flex: 0 0 75%; padding: 10px;">  ![@kaplan2022PartisanSpatial](figures/partisansorting.png)
+    <p style="text-align: center;"></p> </div>
+  <div style="flex: 0 0 25%; padding: 10px;">  ![](figures/sorting.png)
+    <p style="text-align: center;"></p> </div>
+</div>
 
-## Polarization
+
+## Revenge Realized
+
+![@rey2023SpatialInequality](figures/mexicoelections.png)
 
 :::{.notes}
-explain polarizatin
+Long-standing spatial inequalities within national systems have been identified as leading to a rise in political populism with strong territorial as opposed to social foundations (Rodríguez-Pose, 2018). The recent history of Mexico serves as an exemplar of this dynamic. In 2018, for the second time in history, a political party other than the PRI (Institutional Revolutionary Party) had won the Mexican Presidential election. Andres Manuel Lopez Obrador (AMLO) accomplished what he had initially envisioned in 2006, taking away power from corrupt political parties and institutions. AMLO’s victory was no small feat. With his newly formed political party National Regeneration Movement (MORENA), he had accomplished a landslide victory over rival political parties PRI and PAN by winning thirty-one out of the thirty-two Mexican states. Fig. 1 shows the presidential election results from 2012 to 2018. The staggering contrast in the results shows how AMLO leveraged the outrage from those who had suffered the most. His victory was backed by the social unrest born out of increased corruption, poverty, and violence that had plagued the country.
 :::
 
-## Importance
-:::{.notes}
-Why is it important
-:::
+## Separated at Birth?
+
+![@quah1996TwinPeaksa](figures/twinpeaks.png)
 
 ## @wolfson1994WhenInequalities
 
@@ -265,3 +283,8 @@ The induced graph incudes 14 components which now are identical to the faces in 
 # Conclusion
 
 ## Thanks
+
+## References
+
+::: {#refs}
+:::
