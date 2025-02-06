@@ -1,5 +1,6 @@
 ---
-title: "Mind the gap and the map: Measuing distributional and spatial polarization"
+title: "Mind the gap and the map: Measuring distributional and spatial income polarization"
+subtitle: "Getis-Ord Lecture in Spatial Analysis"
 format:  
   clean-revealjs:
     slide-number: true
