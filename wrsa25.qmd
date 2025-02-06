@@ -2,7 +2,8 @@
 title: "Mind the gap and the map: Measuing distributional and spatial polarization"
 format:  
   clean-revealjs:
-    slide-number: false
+    slide-number: true
+    show-slide-number: speaker
 html-math-method:
   method: mathjax
 author:
@@ -14,13 +15,10 @@ author:
       - Department of Geography
       - San Diego State University
 date: last-modified
+bibliography: references.bib
 --- 
 
 ## Getis-Ord
-
-<!------------->
-<!-- homage  -->
-<!------------->
 
 ::: {.notes}
 Pay homage to them here
@@ -47,12 +45,8 @@ provide overview here
 ::: {.notes}
 Motivate the focus on polarization
 :::
-something
 
-```{python}
 
-````
-something
 
 
 ## Polarization
@@ -66,7 +60,7 @@ explain polarizatin
 Why is it important
 :::
 
-## Wolfson
+## @wolfson1994WhenInequalities
 
 \begin{equation}
 P_W = (2G_B - G) \frac{\mu}{m}.
@@ -91,7 +85,7 @@ add two sets of figures to demonstrate these components
 point out that identification in the case of a transfer from Musk to Trump would work to reduce inequality (variance) but increase polarization
 :::
 
-## Multipolarization 
+## Multipolarization [@esteban1994MeasurementPolarization]
 
 :::{.notes}
 add in references and bib
@@ -107,7 +101,7 @@ $$
 
 The parameter $\alpha$ is the degree of sensitivity to polarization. When $\alpha=0$, $P_{ER}(\alpha) = 2 G_{B}$, where $G_B$ is the Gini index between groups.
 
-##  Spatial Polarization
+##  Spatial Polarization [@zhang2001WhatDifference]
 $$
 I(y) = \sum_{g}^K w_g I_g + I(\mu_1 e_1, \mu_2 e_2, \ldots, \mu_k e_k)
 $$
