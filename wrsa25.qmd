@@ -124,17 +124,15 @@ The parameter $\alpha$ is the degree of sensitivity to polarization. When $\alph
 $$
 I(y) = \sum_{g}^K w_g I_g + I(\mu_1 e_1, \mu_2 e_2, \ldots, \mu_k e_k)
 $$
-
-where
-
+$$
 w_g =
 \begin{cases}
     f_g \left( \frac{\mu_g}{\mu} \right)^c & \text{if } c \neq 0, 1 \\
     f_g \left( \frac{\mu_g}{\mu} \right)   & \text{if } c = 1 \\
     f_g                                   & \text{if } c = 0.
 \end{cases}
-
-$I_g$ is the inequality in group $g$, $\mu_g$ is the mean of incomes for members of group $g$ and $e_g$ is a unity vector with $n_g$ elements, and $f_g=\frac{n_g}{n}$. The parameter $c$ measures transfer sensitivity. For $c < 2$, the measure is more sensitive to transfers in the bottom of the distribution than to those in the top end of the distribution. When $c=1$ or $c=0$ the [cite/text/c:@theil1972StatisticalDecomposition] measure is obtained.
+$$
+$I_g$ is the inequality in group $g$, $\mu_g$ is the mean of incomes for members of group $g$ and $e_g$ is a unity vector with $n_g$ elements, and $f_g=\frac{n_g}{n}$. The parameter $c$ measures transfer sensitivity. For $c < 2$, the measure is more sensitive to transfers in the bottom of the distribution than to those in the top end of the distribution. When $c=1$ or $c=0$ the @theil1972StatisticalDecomposition measure applies.
 
 :::{.notes}
 Fix citation
@@ -149,7 +147,13 @@ $$
 
 The polarization can thus grow with increasing distances between the average incomes of the regions as well as a decrease in the inequality within the regions.
 
- 
+## Inspiration
+
+### Integration
+
+- Attribute Bipolarization [@wolfson1994WhenInequalities]
+- Spatial Polarization [@esteban1994MeasurementPolarization;@zhang2001WhatDifference]
+
 
 # Framework
 
@@ -350,7 +354,20 @@ $$
 \nu_i = \frac{\sum_j G_{i,j} A_{i,j}} {\sum_j A_{i,j}}
 $$
 
+## Spatial Multipolarization
 
+### Quartile Classification
+In a quartile-based grouping there would be four components in the attribute graph and, assuming the spatial graph has a single component, our index of spatial multipolarization becomes:
+$$
+S^M(A, G) = 1 - \frac{k_I-4}{n-4}.
+$$
+
+::: {.notes}
+The reliance on quartiles for the attribute grouping gives an interesting cartographic interpretation to the multipolarization measure. The index is inversely related to the number of components in the intersection graph $k_I$. Each of these components is a face in the choropleth map.
+In the cartographic literature a common measure of map complexity is the face ratio, defined as the number of observed faces over the number of faces in the original map  [cite:@maceachren1982MapComplexity].
+The number of observed faces is the number of faces that obtain when internal edges separating areas assigned to the same attribute class are dissolved.
+The measure of spatial multipolarization is a slightly modified complement to this measure of map complexity, with adjustments  made for the relative number of components in the spatial and attribute graphs.
+:::
 
 # Empirical Illustration
 
@@ -475,6 +492,18 @@ The induced graph incudes 14 components which now are identical to the faces in 
 
 
 # Conclusion
+## Contributions
+
+- Family of spatial polarization indices
+- Graph based frameing
+- Distinguish between concentrated advantage and concentrated disadvantage
+- Cluster identification
+- Dynamic spatial partitions
+
+## Next Steps
+- Comparative spatial polarization (US-EU, US-Mexico, etc.)
+- Properties of polarization index
+- Multivariate extensions
 
 ## Thanks
 
