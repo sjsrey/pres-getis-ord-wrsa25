@@ -466,7 +466,7 @@ By contrast, the two income classes above the median are highly fragmented into 
 
 ##
 
-![Spatial bipolarization intersection graph using the regionalization scheme from [cite/text/c:@hanson1996USMexicoIntegration].](figures/hansongraph.png)
+![Spatial bipolarization intersection graph using the regionalization scheme from @hanson1996USMexicoIntegration.](figures/hansongraph.png)
 
 
 :::{.notes}
