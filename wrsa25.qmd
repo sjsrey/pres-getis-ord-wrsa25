@@ -149,11 +149,44 @@ $$
 
 The polarization can thus grow with increasing distances between the average incomes of the regions as well as a decrease in the inequality within the regions.
 
-## Integration
+ 
 
 # Framework
 
-## Graphs
+## Polarization as Graph Intersection
+
+### Areas as nodes
+- Each area will be a vertex $v_i$, $i=1,2,\ldots, n$
+- $|V| = n$
+
+### Two Graphs
+- Distributional (Attribute) Graph
+- Geographical (Spatial) Graph
+
+## Bipolarization Graph
+$$A = (V_A, E_A)$$
+
+$$E_A = \{(i, j) \in V \times V \mid g(f(i)) = g(f(j))\}$$
+where $g(f(i))$ is a function mapping $i$ to a value class. The specific form of this mapping obtains from the type of polarization under consideration.
+
+
+
+## Geographical Adjacency Graph
+
+$$G = (V_G, E_G)$$
+codifies the geographical relationships between each pair of locations. 
+
+## Components
+Both
+graphs share identical vertex sets, $V_A = V_G = V$, with each vertex
+linked to a locational observation $i$, and $|V| = n$.
+
+- Let $C_G = \{C_{G,1}, C_{G,2}, ..., C_{G,k_{G}}\}$ define the  $k_G$ connected components of $G$. 
+- Similarly, define $C_A = \{C_{A,1}, C_{A,2}, ..., C_{A,k_{A}}\}$ as the component set for $A$.
+- Let $k=max(k_G, k_A)$.
+
+
+
 
 ## Intersection
 

@@ -1,7 +1,7 @@
 # Makefile for previewing a single .qmd file
 
 QMD_FILE = wrsa25.qmd  # Name of your .qmd file
-QUARTO_PORT = 8888     # Desired port
+QUARTO_PORT = 8900     # Desired port
 
 .PHONY: preview
 preview:
