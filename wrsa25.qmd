@@ -188,9 +188,169 @@ linked to a locational observation $i$, and $|V| = n$.
 
 
 
-## Intersection
+## Intersection Graph
 
-## Components
+$$I=(V_I, E_I)$$ where 
+
+- $V_I=V_G=V_A$
+- $E_I = E_G \cap E_A$
+
+Define $C_I = \{C_{I,1}, C_{I,2}, \ldots, C_{I,k_{I}}\}$ as the component set for $I$, with $k_{I} = \left | C_I \right |$.
+
+
+## Spatial Polarization Index
+
+
+The index of spatial polarization is:
+$$
+S(G, A) = 1 - \frac{k_I - k}{ (n - k)}
+$$
+
+
+- $k =max(k_G, k_A)$.
+
+## Spatial Bipolarization
+Given a set of $n$ locations with a vector of per capita incomes $Y$, 
+let $m= \text{median}(Y)$. Define $A$ as the $n \times n$ attribute adjacency graph with edge conditions:
+$$
+A_{ij} = \begin{cases} 
+      1 & \text{if } (Y_i \leq m \text{ and } Y_j \leq m) \text{ or } (Y_i > m \text{ and } Y_j >m), \\
+      0 & \text{otherwise}.
+   \end{cases}
+  $$
+
+$A$ will have $k_A=2$ components of equal size when $n$ is even, and approximately equal size when $n$ is odd.
+
+## 
+Define $G$ as the spatial adjacency graph with:
+$$
+G_{ij} = \begin{cases} 
+      1 & \text{if observations } i \text{ and } j \text{ are geographically adjacent}, \\
+      0 & \text{otherwise}.
+   \end{cases}
+  $$
+  The number of connected components for the spatial adjacency graph, $k_G$, depends on the locational configuration. In a connected spatial adjacency graph, there is a path between each pair of locations, and thus there will be no isolated vertices or disconnected subgraphs. In such a graph $k_G=1$. 
+  
+  
+## Spatial Bipolarization
+  \begin{equation}
+S^B(A, G) = 1 - \frac{k_I-k}{n-2}.
+\label{eq:sp}
+\end{equation}
+ with $k_I = |C_I|$ , $I = A \cap G$, and $k = max(k_A, k_G)$.
+ 
+ $$ 0 \le S^B \le 1$$
+
+
+$$
+S^B = \begin{cases} 
+      1 &k_I = 2 \\
+      0 &k_I = 0.
+   \end{cases}
+  $$
+
+
+
+## Spatial Bipolarization
+
+### Views
+- Spatial distribution of attribute polarization
+- Polarization of the spatial join structure
+ 
+## Scales of Spatial Bipolarization
+
+$$
+V = C_{I,1} \cup C_{I,2} \cup \dots \cup C_{I,k_I}
+$$
+with the property that:
+
+$$C_{I,f} \cap C_{I,h} = \emptyset \  \forall \ f \ne h $$ 
+
+::: {.notes}
+These components define a spatial partition of the map
+:::
+
+## Spatial Attribute Clusters
+$$C_{I,f}$$
+
+
+- a path exists between each pair of member nodes in the spatial adjacency subgraph induced by the intersection
+- a path exists between each pair of member nodes in the attribute graph
+
+
+## Scales of Spatial Bipolarization
+
+### Global
+
+$$S^B$$
+
+### Meso
+$$C_I$$
+
+### Local
+$$
+C_{I,l} = \{ V_j \in V : V_j \text{ is in component } l \}
+$$
+
+## Meso Scale: $C_{I,f}$
+
+
+For each component $f$ of graph $I$, consider the measure:
+
+\begin{equation}
+\zeta_f = \frac{\sum_{i \in f}  \sum_j G_{i,j} A_{i,j}}{\sum_{i \in f} \sum_j G_{i,j}}.
+\end{equation}
+
+
+For the nodes in this intersection component, this represents the proportion of incident edges  from the geographical adjacency graph  that also exist in the intersection component. In other words, this is the share of each location's geographical neighbors that belong to the same attribute component as the location.
+
+## Local Scale: $V_i$
+
+$$
+\zeta_i =\frac{\sum_j G_{i,j}A_{i,j}} {\sum_j G_{i,j}}
+$$
+
+::: {.notes}
+These meso- and local-level measures offer complementary insights into spatial structure. At the meso level, they assess the degree of spatial cohesion within an intersection component, while at the local level, they capture the relative position of individual nodes within their respective components.
+
+Furthermore, these meso- and local-level indicators relate to their global counterparts:[fn:3]
+:::
+
+## Global-Meso-Local
+
+### Global
+$$
+\zeta = \frac{\sum_i \sum_j G_{i,j} A_{i,j}}{\sum_i \sum_j G_{i,j}}
+$$
+
+### Global from Meso
+$$
+\zeta = \sum_f  \frac{\sum_{i \in f}  \sum_j G_{i,j}} {\sum_i \sum_j G_{i,j}} \zeta_f 
+$$
+
+### Global from Local
+
+$$\zeta = \sum_i \frac{\sum_j G_{i,j}}{\sum_i \sum_j G_{i,j}}\zeta_i$$
+
+::: {.notes}
+
+These meso- and local-level measures offer complementary insights into spatial structure. At the meso level, they assess the degree of spatial cohesion within an intersection component, while at the local level, they capture the relative position of individual nodes within their respective components.
+
+Furthermore, these meso- and local-level indicators relate to their global counterparts:[fn:3]
+:::
+
+## Dual Hierarchy for Attribute Polarization
+$$
+\nu_f = \frac{\sum_{i \in f}  \sum_j G_{i,j} A_{i,j}}{\sum_{i \in f} \sum_j A_{i,j}}
+$$
+
+and
+
+$$
+\nu_i = \frac{\sum_j G_{i,j} A_{i,j}} {\sum_j A_{i,j}}
+$$
+
+
 
 # Empirical Illustration
 
