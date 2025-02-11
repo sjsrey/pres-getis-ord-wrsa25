@@ -19,12 +19,14 @@ date: last-modified
 bibliography: references.bib
 --- 
 
-## Getis-Ord
+## 
+
+![](figures/getis_ord.png)
 
 ::: {.notes}
 Pay homage to them here
 :::
----
+
 
 ## Overview
 
@@ -37,7 +39,6 @@ Pay homage to them here
 provide overview here
 :::
 
----
 
 # Polarization
 
@@ -75,7 +76,18 @@ Motivate the focus on polarization
 Long-standing spatial inequalities within national systems have been identified as leading to a rise in political populism with strong territorial as opposed to social foundations (Rodríguez-Pose, 2018). The recent history of Mexico serves as an exemplar of this dynamic. In 2018, for the second time in history, a political party other than the PRI (Institutional Revolutionary Party) had won the Mexican Presidential election. Andres Manuel Lopez Obrador (AMLO) accomplished what he had initially envisioned in 2006, taking away power from corrupt political parties and institutions. AMLO’s victory was no small feat. With his newly formed political party National Regeneration Movement (MORENA), he had accomplished a landslide victory over rival political parties PRI and PAN by winning thirty-one out of the thirty-two Mexican states. Fig. 1 shows the presidential election results from 2012 to 2018. The staggering contrast in the results shows how AMLO leveraged the outrage from those who had suffered the most. His victory was backed by the social unrest born out of increased corruption, poverty, and violence that had plagued the country.
 :::
 
-## Separated at Birth?
+## Spatial Polarization
+
+### Consensus
+- Important to address 
+
+### Uncertainty
+- How to measure?
+- What index?
+- What scale?
+- How to treat dynamics?
+
+## Dynamics and Polarization: Separated at Birth?
 
 ![@quah1996TwinPeaksa](figures/twinpeaks.png)
 
@@ -93,10 +105,17 @@ Given that $G_B = D_{50}$, the Gini index can be rewritten as
 P_W = (G_B-G_W)\frac{\mu}{m}.
 \end{equation} 
 
-## Components of Bipolarization
+##  Bipolarization
 
-- *Increasing spread*: gap between the two halves
-- *Increasing identification*: decrease in local variance
+### Components
+- **Alienation**: Increasing gap between the two halves
+- **Group Identification**:  decrease in local variance
+
+### Bipolarization vs. Inequality
+- Not synonyms
+- Pigou-Dalton: progressive income transfer must reduce inequality
+- Same transfer may increase polarization (e.g., Musk to Trump)
+
 
 :::{.notes}
 add two sets of figures to demonstrate these components
@@ -105,10 +124,6 @@ point out that identification in the case of a transfer from Musk to Trump would
 :::
 
 ## Multipolarization [@esteban1994MeasurementPolarization]
-
-:::{.notes}
-add in references and bib
-:::
 
 - Division into $k$ ordered groups
 - $\pi_i= N_i /\sum_i N_i$
@@ -152,7 +167,21 @@ The polarization can thus grow with increasing distances between the average inc
 ### Integration
 
 - Attribute Bipolarization [@wolfson1994WhenInequalities]
+  - Embed in a dynamic framework ala Quah
 - Spatial Polarization [@esteban1994MeasurementPolarization;@zhang2001WhatDifference]
+  - Interpret *affiliation polarization* as *interregional polarization*
+  - Interpret *identification polarization* as *intraregional polarization*
+  
+## Family of Spatial Polarization Measures
+
+### Spatial Scale
+- identification of polarization clusters
+- heirarchical scales of polarization (global-meso-local)
+
+### Dynamics
+- relax fixed regionalization assumption
+- extend traditional interregional inequality decomposition framework
+
 
 
 # Framework
@@ -274,7 +303,7 @@ $$C_{I,f} \cap C_{I,h} = \emptyset \  \forall \ f \ne h $$
 These components define a spatial partition of the map
 :::
 
-## Spatial Attribute Clusters
+## Spatial Polarization Clusters
 $$C_{I,f}$$
 
 
@@ -429,12 +458,17 @@ Note that the overall spatial polarization index is the average of these two com
 
 ![Local neighborhood homogeneity index Mexico state income  1940.](figures/localg.png)
 
+::: {.notes}
+The local neighborhood homogeneity index from equation (\ref{e:localg}) measures the proportion of a state's geographical neighbors that are on the same side of the income distribution.
+:::
+
+
 ##
 
 ![Local class connectivity  index Mexico state income  1940.](figures/locala.png)
 
 :::{.notes}
-The local neighborhood homogeneity index from equation (\ref{e:localg}) measures the proportion of a state's geographical neighbors that are on the same side of the income distribution.
+
 The distributional corollary to this index is the measure of local class connectivity from equation (\ref{e:locala}) shown in Figure [[fig:locala]], which measures the proportion of a state's attribute neighbors that are also its geographical neighbors.[fn:4]
 
 The two sets of local measures are complements.
@@ -462,7 +496,7 @@ By contrast, the two income classes above the median are highly fragmented into 
 
 ## Regimes
 
-![Hanson (1998)](figures/hanson.png)
+![@hanson1996USMexicoIntegration](figures/hanson.png)
 
 ##
 
@@ -504,6 +538,7 @@ The induced graph incudes 14 components which now are identical to the faces in 
 - Comparative spatial polarization (US-EU, US-Mexico, etc.)
 - Properties of polarization index
 - Multivariate extensions
+- `pysal-inequality`
 
 ## Thanks
 
