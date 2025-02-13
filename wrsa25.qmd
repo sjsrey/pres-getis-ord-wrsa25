@@ -24,7 +24,30 @@ bibliography: references.bib
 ![](figures/getis_ord.png)
 
 ::: {.notes}
-Pay homage to them here
+I would like to take a few moments to share with you the impact these two scholars have had on my career.
+
+I first met arthur in 1986 when I gave my first ever presentation at the AAG meeting. 
+I don't remember anything I said during my presentation, as I was terrified as Art and Mike Goodchild were sitting in the first row only a few feet from me.
+
+I do remember, however, that after the session, Art came up and introduced himself and shared, in his gentle but serious manner a number of constructive suggestions.
+At that point I had no idea I would be lucky enough to be his colleague at SDSU only a few years later, or that I would benefit enormously from his counsel and support for over 36 years.
+
+
+One of the many positive externalities you experience when Art is in your Department is a seemingly endless number of visits from predominate spatial scientistis and scholars. One such person was Keith Ord, who visited the first year I started as an assistant professor at SDSU in 1992. Keith met with me for an hour and the entire conversion consisted of Keith asking me questions about my research and offering invaluable encouragement on what I was doing and could do.
+
+That is just me personally, benefiting from their gifts.
+
+If we think of what they have given spatial analysis and many other disciplines, their collaboration has truly been transformative. 
+
+Their collaboration has resulted in two of the five most cited papers in GA.
+That represents impacts not just in the field of spatial analysis, but the wide scope of the applications of their methods across disciplines.
+
+They put local analysis on the map.
+
+I would like to thank the Getis-Ord committee for selecting me for this honor.
+
+
+
 :::
 
 
@@ -36,7 +59,7 @@ Pay homage to them here
 - Conclusion
 
 ::: {.notes}
-provide overview here
+This paper presents a family of spatial polarization indices that integrates distributional and spatial dimensions to measure economic polarization. Traditional polarization metrics either focus solely on distributional aspects or rely on exogenously defined regional partitions, limiting their applicability to dynamic spatial economies. Building on economic polarization theory and spatial inequality decomposition, the proposed indices incorporate spatial adjacency relations and dynamically evolving regional configurations. By constructing intersection graphs that capture both attribute similarity (e.g., income levels) and geographic associations, this framework identifies spatially coherent clusters, and multiscalar measures of spatial polarization across global, meso, and local scales. The indices extend beyond bipolarization to multipolarization.
 :::
 
 
@@ -74,7 +97,7 @@ Long-standing spatial inequalities within national systems have been identified 
 ### Consensus
 - Important to address 
 
-### Uncertainty
+### Uncertainty [@pike2024LeftPlaces]
 - How to measure?
 - What index?
 - What scale?
@@ -165,14 +188,20 @@ The polarization can thus grow with increasing distances between the average inc
 
 ## Inspiration
 
-### Integration
+### Bipolarization
 
 - Attribute Bipolarization [@wolfson1994WhenInequalities]
-  - Embed in a dynamic framework ala Quah
+  - Attribute distribution used to define groups
 - Spatial Polarization [@esteban1994MeasurementPolarization;@zhang2001WhatDifference]
+  - Regionalization used to define groups
   - Interpret *affiliation polarization* as *interregional polarization*
   - Interpret *identification polarization* as *intraregional polarization*
   
+  
+### Integration
+- Combine attribute and spatial polarization
+- Embed in a dynamic framework &agrave; la  @quah1996TwinPeaksa
+
 ## Family of Spatial Polarization Measures
 
 ### Spatial Scale
@@ -279,7 +308,7 @@ S^B(A, G) = 1 - \frac{k_I-k}{n-2}.
 $$
 S^B = \begin{cases} 
       1 &k_I = 2 \\
-      0 &k_I = 0.
+      0 &k_I = n.
    \end{cases}
   $$
 
@@ -394,10 +423,14 @@ $$
 
 ::: {.notes}
 The reliance on quartiles for the attribute grouping gives an interesting cartographic interpretation to the multipolarization measure. The index is inversely related to the number of components in the intersection graph $k_I$. Each of these components is a face in the choropleth map.
-In the cartographic literature a common measure of map complexity is the face ratio, defined as the number of observed faces over the number of faces in the original map  [cite:@maceachren1982MapComplexity].
+In the cartographic literature a common measure of map complexity is the face ratio, defined as the number of observed faces over the number of faces in the original map  [cite:@maceachren1982MapComplexitya].
 The number of observed faces is the number of faces that obtain when internal edges separating areas assigned to the same attribute class are dissolved.
 The measure of spatial multipolarization is a slightly modified complement to this measure of map complexity, with adjustments  made for the relative number of components in the spatial and attribute graphs.
 :::
+
+## Map Complexity  [@maceachren1982MapComplexitya]
+
+![High and Low Map Complexity](mapcomp.png)
 
 # Empirical Illustration
 
