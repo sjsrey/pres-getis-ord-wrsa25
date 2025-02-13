@@ -46,13 +46,6 @@ provide overview here
 
 ![Regional Science Literature](figures/convergence_wordcloud.png)
 
-## Bipolarization
-
-![](figures/pysal-bipolarization.png)
-
-::: {.notes}
-Motivate the focus on polarization
-:::
 
 ## Revenge Narrative
 
@@ -104,6 +97,14 @@ Given that $G_B = D_{50}$, the Gini index can be rewritten as
 \begin{equation}
 P_W = (G_B-G_W)\frac{\mu}{m}.
 \end{equation} 
+
+## Bipolarization
+
+![](figures/pysal-bipolarization.png)
+
+::: {.notes}
+Motivate the focus on polarization
+:::
 
 ##  Bipolarization
 
@@ -193,10 +194,10 @@ The polarization can thus grow with increasing distances between the average inc
 - $|V| = n$
 
 ### Two Graphs
-- Distributional (Attribute) Graph
+- Distributional (Attribute) Polarization Graph
 - Geographical (Spatial) Graph
 
-## Bipolarization Graph
+## Attribute Polarization Graph
 $$A = (V_A, E_A)$$
 
 $$E_A = \{(i, j) \in V \times V \mid g(f(i)) = g(f(j))\}$$
