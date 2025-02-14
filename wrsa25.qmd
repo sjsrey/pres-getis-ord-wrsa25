@@ -11,7 +11,7 @@ html-math-method:
 author:
   - name: Sergio J. Rey
     orcid: 0000-0001-5857-9762
-    email: sey@sdsu.edu
+    email: srey@sdsu.edu
     affiliations: 
       - Center for Open Geographical Science
       - Department of Geography
@@ -19,6 +19,7 @@ author:
 date: last-modified
 bibliography: references.bib
 --- 
+
 
 ## 
 
@@ -195,8 +196,8 @@ The polarization can thus grow with increasing distances between the average inc
   - Attribute distribution used to define groups
 - Spatial Polarization [@esteban1994MeasurementPolarization;@zhang2001WhatDifference]
   - Regionalization used to define groups
-  - Interpret *affiliation polarization* as *interregional polarization*
-  - Interpret *identification polarization* as *intraregional polarization*
+  - Interpret *alienation polarization* as *interregional inequality*
+  - Interpret *identification polarization* as *intraregional inequality*
   
   
 ### Integration
@@ -431,7 +432,7 @@ The measure of spatial multipolarization is a slightly modified complement to th
 
 ## Map Complexity  [@maceachren1982MapComplexitya]
 
-![High and Low Map Complexity](mapcomp.png)
+![High and Low Map Complexity](mapcomp.png){width=250%}
 
 # Empirical Illustration
 
